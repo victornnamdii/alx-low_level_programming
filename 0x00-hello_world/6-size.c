@@ -4,7 +4,7 @@
  * Return:
  */
 
-int main()
+int main(void)
 {
 	int i;
 	double d;
