@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(char str1) /* entry point */
+int main(void) /* entry point */
 {
 	/* initializing strings */
 
