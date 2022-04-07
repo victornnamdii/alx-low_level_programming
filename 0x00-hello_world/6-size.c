@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
  * main - entry
- * Return: 
+ * Return:
  */
 
-int main(void)
+int main()
 {
 	int i;
 	double d;
