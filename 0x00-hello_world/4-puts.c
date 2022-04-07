@@ -1,8 +1,6 @@
 #include <stdio.h>
 
-/* program that prints exactly Programming is like building a multilingual puzzle with quotation mark */
-
-int main(void)
+int main(char str1) /* entry point */
 {
 	/* initializing strings */
 
