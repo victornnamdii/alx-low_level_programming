@@ -9,11 +9,11 @@ int main(void)
 
 	a=0;
 
-	while (a < 10000)
+	while (a < 1000)
 	{
 		b = a % 10;
-		c = a / 100;
-		d = a / 1000;
+		c = (a / 10) % 10;
+		d = a / 100;
 
 		if (b > c && c > d)
 		{
