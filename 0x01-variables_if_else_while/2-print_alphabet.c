@@ -2,6 +2,7 @@
 
 /*
  * main - main block
+ * Description - putchar used to print alphabets
  * Return: 0
  */
 
