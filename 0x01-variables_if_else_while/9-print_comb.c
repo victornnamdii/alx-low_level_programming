@@ -6,14 +6,15 @@
 int main(void)
 {
 	int a = 0;
-	int b = ',';
 
 	while (a < 10)
 	{
-		putchar(a);
-		putchar(b);
-		putchar(' ');
-		a++;
+		putchar(a + '0');
+		if (a < 9)
+		{
+			putchar(44);
+			putchar(32);
+		}
 	}
 	putchar('\n');
 	return (0);
