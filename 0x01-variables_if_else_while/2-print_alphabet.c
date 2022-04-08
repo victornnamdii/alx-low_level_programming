@@ -1,8 +1,10 @@
 #include <stdio.h>
+
 /*
  * main - main block
  * Return: 0
  */
+
 int main(void)
 {
 	char j = 'a';
@@ -14,6 +16,5 @@ int main(void)
 	}
 
 	putchar('\n');
-	
 	return (0);
 }
