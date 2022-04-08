@@ -5,7 +5,8 @@
  */
 int main(void)
 {
-	int a,b,c;
+	int a, b, c;
+
 	a = 0;
 
 	while (a < 100)
@@ -18,7 +19,7 @@ int main(void)
 			putchar(c + '0');
 			putchar(b + '0');
 
-			if (a<89)
+			if (a < 89)
 			{
 				putchar(44);
 				putchar(32);
