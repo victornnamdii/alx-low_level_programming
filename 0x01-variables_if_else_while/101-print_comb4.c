@@ -1,13 +1,13 @@
 #include <stdio.h>
 /**
  * main - main block
- * Return : 0
+ * Return: 0
  */
 int main(void)
 {
-	int a,b,c,d;
+	int a, b, c, d;
 
-	a=0;
+	a = 0;
 
 	while (a < 1000)
 	{
