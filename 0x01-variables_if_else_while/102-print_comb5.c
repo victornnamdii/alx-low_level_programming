@@ -10,15 +10,16 @@ int main(void)
 	a = 0;
 	d = 1;
 
-	while (a < 99 && d < 100)
+	while (a < 99)
 	{
 		b = a % 10;
 		c = a / 10;
-		e = d % 10;
-		f = d / 10;
 		
 		while (d < 100)
 		{
+			e = d % 10;
+			f = d / 10;
+
 			putchar(c + '0');
 			putchar(b + '0');
 			
