@@ -18,12 +18,11 @@ int main(void)
 			c = a / 10;
 			e = d % 10;
 			f = d / 10;
-
-			putchar(c + '0');
-			putchar(b + '0');
 			
 			if (e > b || f > c)
 			{
+				putchar(c + '0');
+				putchar(b + '0');
 				putchar(32);
 				putchar(f + '0');
 				putchar(e + '0');
