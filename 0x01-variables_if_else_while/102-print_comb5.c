@@ -19,7 +19,7 @@ int main(void)
 			e = d % 10;
 			f = d / 10;
 			
-			if ((f = c && e > b) || f > c)
+			if ((f == c && e > b) || f > c)
 			{
 				putchar(c + '0');
 				putchar(b + '0');
