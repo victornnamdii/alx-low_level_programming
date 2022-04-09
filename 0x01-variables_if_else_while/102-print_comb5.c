@@ -23,7 +23,7 @@ int main(void)
 			putchar(c + '0');
 			putchar(b + '0');
 			
-			if (e > b)
+			if (e > b || f > c)
 			{
 				putchar(32);
 				putchar(f + '0');
