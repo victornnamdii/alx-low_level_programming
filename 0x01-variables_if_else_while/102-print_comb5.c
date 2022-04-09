@@ -27,7 +27,7 @@ int main(void)
 				putchar(f + '0');
 				putchar(e + '0');
 				
-				if (d < 100)
+				if (a < 98 && d < 100)
 				{
 					putchar(44);
 					putchar(32);
