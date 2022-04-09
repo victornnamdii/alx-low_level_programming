@@ -12,7 +12,7 @@ int main(void)
 
 	while (a < 99)
 	{
-		while (d < 100)
+		for (d = 1; d < 100; d++)
 		{
 			b = a % 10;
 			c = a / 10;
@@ -34,7 +34,6 @@ int main(void)
 					putchar(32);
 				}
 			}
-			d++;
 		}
 		a++;
 	}
