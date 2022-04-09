@@ -10,7 +10,7 @@ int main(void)
 	a = 0;
 	d = 1;
 
-	while (a < 99)
+	for (a = 0; a < 99; a++)
 	{
 		b = a % 10;
 		c = a / 10;
@@ -36,7 +36,6 @@ int main(void)
 				}
 			}
 			d++;
-			a++;
 		}
 	}
 	putchar('\n');
