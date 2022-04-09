@@ -18,7 +18,7 @@ int main(void)
 			c = a / 10;
 			e = d % 10;
 			f = d / 10;
-			
+
 			if ((f == c && e > b) || f > c)
 			{
 				putchar(c + '0');
@@ -26,7 +26,7 @@ int main(void)
 				putchar(32);
 				putchar(f + '0');
 				putchar(e + '0');
-				
+
 				if (a < 98 && d < 100)
 				{
 					putchar(44);
