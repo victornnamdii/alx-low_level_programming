@@ -10,13 +10,12 @@ int main(void)
 	a = 0;
 	d = 1;
 
-	for (a = 0; a < 99; a++)
+	while (a < 99)
 	{
-		b = a % 10;
-		c = a / 10;
-		
 		while (d < 100)
 		{
+			b = a % 10;
+			c = a / 10;
 			e = d % 10;
 			f = d / 10;
 
@@ -37,6 +36,7 @@ int main(void)
 			}
 			d++;
 		}
+		a++;
 	}
 	putchar('\n');
 	return (0);
