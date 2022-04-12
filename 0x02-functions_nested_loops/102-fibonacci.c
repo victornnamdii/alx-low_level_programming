@@ -11,7 +11,7 @@ int main (void)
 
 	while (n < 50)
 	{
-		a + b = d;
+		d = a + b;
 		printf(", %i", d);
 		a = b;
 		b = d;
