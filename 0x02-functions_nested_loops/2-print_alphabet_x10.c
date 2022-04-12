@@ -1,16 +1,16 @@
 #include "main.h"
 /**
- * main - prints alphabets in 10 lines
+ * print_alphabet_x10  - prints alphabets in 10 lines
  * Return: 0
  */
 void print_alphabet_x10(void)
 {
-	char a = 'a';
-	int j;
+	char a;
+	int j = 0;
 
 	while (j < 10)
 	{
-		j = 0;
+		a = 'a';
 
 		while (a <= 'z')
 		{
