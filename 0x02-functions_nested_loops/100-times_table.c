@@ -14,8 +14,9 @@ void print_times_table(int n)
 		{
 			k = a * j;
 
-			if (k <= n && j != 0)
+			if (k <= 9 && j != 0)
 			{
+				_putchar(32);
 				_putchar(32);
 				_putchar(k + '0');
 			}
@@ -25,6 +26,7 @@ void print_times_table(int n)
 			}
 			else
 			{
+				_putchar(32);
 				_putchar(k / 10 + '0');
 				_putchar(k % 10 + '0');
 
