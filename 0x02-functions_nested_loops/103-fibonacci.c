@@ -5,8 +5,8 @@
  */
 int main(void)
 {
-	long int a = 1, b = 2, n = 2, d, k = 2;
-	
+	long int a = 1, b = 2, n = 0, d, k = 2;
+
 	while (n < 50)
 	{
 		d = a + b;
