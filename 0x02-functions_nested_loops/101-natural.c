@@ -5,10 +5,12 @@
  */
 int main(void)
 {
-	int a = 0, c = 0;
+	int a = 0, c;
 
 	while (a < 1024)
 	{
+		c = 0;
+
 		if ((a % 3) == 0 || (a % 5) == 0)
 		{
 			scanf("%i", &c);
