@@ -16,13 +16,13 @@ void times_table(void)
 		_putchar(32);
 		_putchar(32);
 
-		while (m < 10)
+		while (m < 9)
 		{
 			k = a + j;
 
 			_putchar(k + '0');
 
-			if (j < 9)
+			if (m < 8)
 			{
 				_putchar(44);
 				_putchar(32);
