@@ -4,17 +4,19 @@
  */
 void times_table(void)
 {
-	int a = 0, j;
+	int a = 0, j, m;
 	
 	while (a < 10)
 	{
 		j = 0;
+		m = 0;
+
 		_putchar(48);
 		_putchar(44);
 		_putchar(32);
 		_putchar(32);
 
-		while (j < 10)
+		while (m < 10)
 		{
 			_putchar((a + j) + '0');
 
@@ -24,8 +26,10 @@ void times_table(void)
 				_putchar(32);
 				_putchar(32);
 			}
-			j++;
+			m++;
 		}
+		_putchar('\n');
+		j++
 		a++;
 	}
 }
