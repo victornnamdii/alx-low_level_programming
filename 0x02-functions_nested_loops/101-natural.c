@@ -15,7 +15,7 @@ int main(void)
 
 		if (m == 0 || n == 0)
 		{
-			scanf("%i", &k);
+			scanf(a, &k);
 			c = c + k;
 		}
 		a++;
