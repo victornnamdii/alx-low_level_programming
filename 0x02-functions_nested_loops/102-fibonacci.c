@@ -5,7 +5,7 @@
  */
 int main (void)
 {
-	int a = 0, b = 1, n = 2, d;
+	int a = 1, b = 2, n = 2, d;
 
 	printf("%i, %i", a, b);
 
