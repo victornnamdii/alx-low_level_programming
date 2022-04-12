@@ -14,21 +14,25 @@ void times_table(void)
 		{
 			k = a * j;
 			
-			if (k <= 9 && k > 0)
+			if (k <= 9 && j != 0)
 			{
-				_putchar(44);
+				_putchar(32);
 				_putchar(k + '0');
 			}
-			else if (k == 0)
+			else if (j == 0)
 			{
 				_putchar(k + '0');
-				_putchar(44);
-				_putchar(32);
 			}
 			else
 			{
 				_putchar(k / 10 + '0');
 				_putchar(k % 10 + '0');
+		
+			}
+			if (j < 9)
+			{
+				_putchar(44);
+				_putchar(32);
 			}
 			j++;
 		}
