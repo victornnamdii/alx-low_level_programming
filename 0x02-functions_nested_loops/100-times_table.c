@@ -7,16 +7,13 @@ void print_times_table(int n)
 {
 	int a = 0, j, k;
 
-	if (n  < 15 && n > 0)
+	if (n  < 15 && n >= 0)
 	{
-		while (a < (n + 1))
+		for (a=0; a < (n + 1); a++)
 			{
-				j = 0;
-
-				while (j < (n + 1))
+				for (j = 0; j < (n + 1); j++)
 				{
 					k = a * j;
-
 					if (k <= 9 && j != 0)
 					{
 						_putchar(32);
@@ -33,21 +30,19 @@ void print_times_table(int n)
 						_putchar(k / 10 + '0');
 						_putchar(k % 10 + '0');
 					}
-					else if (k > 99)
+					else if
 					{
-						_putchar(k / 100);
-						_putchar((k / 10) % 10);
-						_putchar(k % 10);
+						_putchar(k / 100 + '0');
+						_putchar((k / 10) % 10 + '0');
+						_putchar(k % 10 + '0');
 					}
 					if (j < n)
 					{
 						_putchar(44);
 						_putchar(32);
 					}
-					j++;
 				}
 				_putchar('\n');
-				a++;
 			}
 	}
 }
