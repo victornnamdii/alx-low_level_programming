@@ -11,7 +11,12 @@ int main(void)
 	{
 		c = 0;
 
-		if ((a % 3) == 0 || (a % 5) == 0)
+		if ((a % 3) == 0)
+		{
+			scanf("%i", &k);
+			c = c + k;
+		}
+		else if ((a % 5) == 0)
 		{
 			scanf("%i", &k);
 			c = c + k;
