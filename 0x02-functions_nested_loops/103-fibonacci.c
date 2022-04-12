@@ -5,20 +5,19 @@
  */
 int main(void)
 {
-	long int a = 1, b = 2, n = 2, d;
+	long int a = 1, b = 2, n = 2, d, k = 2;
 	
-	printf("%lu", b);
 	while (n < 50)
 	{
 		d = a + b;
 		if (d % 2 == 0 && d <= 4000000)
 		{
-			printf(", %lu", d);
+			k += d;
 		}
 		a = b;
 		b = d;
 		n++;
 	}
-	printf("\n");
+	printf("%lu\n", k);
 	return (0);
 }
