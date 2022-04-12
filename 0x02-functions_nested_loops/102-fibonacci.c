@@ -3,7 +3,7 @@
  * main - entry block
  * Return: 0
  */
-int main (void)
+int main(void)
 {
 	long int a = 1, b = 2, n = 2, d;
 
