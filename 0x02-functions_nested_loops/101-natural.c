@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	int a = 0, c;
+	int a = 0, c, k;
 
 	while (a < 1024)
 	{
@@ -13,8 +13,8 @@ int main(void)
 
 		if ((a % 3) == 0 || (a % 5) == 0)
 		{
-			scanf("%i", &c);
-			c += c;
+			scanf("%i", &k);
+			c = c + k;
 		}
 		a++;
 	}
