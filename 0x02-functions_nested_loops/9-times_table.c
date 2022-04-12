@@ -4,7 +4,7 @@
  */
 void times_table(void)
 {
-	int a = 0, j, m;
+	int a = 0, j, m, k;
 	
 	while (a < 10)
 	{
@@ -18,7 +18,9 @@ void times_table(void)
 
 		while (m < 10)
 		{
-			_putchar((a + j) + '0');
+			k = a + j;
+
+			_putchar(k + '0');
 
 			if (j < 9)
 			{
@@ -26,6 +28,7 @@ void times_table(void)
 				_putchar(32);
 				_putchar(32);
 			}
+			k++;
 			m++;
 		}
 		_putchar('\n');
