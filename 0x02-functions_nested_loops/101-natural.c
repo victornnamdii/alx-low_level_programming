@@ -5,18 +5,15 @@
  */
 int main(void)
 {
-	int a = 0, c, k;
+	int a = 0, c, k, m, n;
 
 	while (a < 1024)
 	{
 		c = 0;
+		m = a % 3;
+		n = a % 5;
 
-		if ((a % 3) == 0)
-		{
-			scanf("%i", &k);
-			c = c + k;
-		}
-		else if ((a % 5) == 0)
+		if (m == 0 || n == 0)
 		{
 			scanf("%i", &k);
 			c = c + k;
