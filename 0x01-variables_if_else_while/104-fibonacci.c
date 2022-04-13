@@ -11,7 +11,7 @@ int main(void)
 
 	printf("%lu, %lu", a, b);
 
-	while (n < 50)
+	while (n < 98)
 	{
 		d = a + b;
 		if (d > LARGEST || x > 0 || y > 0)
