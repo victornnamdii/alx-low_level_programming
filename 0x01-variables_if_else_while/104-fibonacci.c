@@ -5,15 +5,15 @@
  */
 int main(void)
 {
-	long int a = 1, b = 2, n = 2, d, j = 10000000000;
-	long int hold1, hold2, x = 0, y = 0, hold3;
+	unsigned long int a = 1, b = 2, n = 2, d, j = 10000000000;
+	unsigned long int hold1, hold2, x = 0, y = 0, hold3;
 
 	printf("%lu, %lu", a, b);
 
 	while (n < 50)
 	{
 		d = a + b;
-		if (d > j)
+		if (d > j || x > 0 || y > 0)
 		{
 			hold1 = (a + b) / j;
 			hold2 = (a + b) % j;
