@@ -5,9 +5,9 @@
  * @n: value to be checked
  * Return: max prime  number
  */
-long long maxPrimeFactors(long long n)
+void maxPrimeFactors(long n)
 {
-    long long maxPrime = -1;
+    long maxPrime = -1;
  
     while (n % 2 == 0)
     {
@@ -34,11 +34,10 @@ long long maxPrimeFactors(long long n)
     }
     if (n > 4)
         maxPrime = n;
-    return (maxPrime);
+    printf("%ld\n", n);
 }
 int main(void)
 {
-    long long n = 612852475143;
-    printf("%lld\n", maxPrimeFactors(n));
+    maxPrimeFactors(612852475143);
     return (0);
 }
