@@ -1,4 +1,5 @@
 #include "main.h"
+#define LARGEST 1000000000
 /**
  * print_number - prints integer using putchar only
  * @n: integer
