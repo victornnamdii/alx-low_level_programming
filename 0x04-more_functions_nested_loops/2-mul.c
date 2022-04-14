@@ -8,13 +8,11 @@
 int mul(int a, int b)
 {
 	int i = 0;
-	char k;
-
-	k[] = a * b;
+	char k[] = a * b;
 
 	while (k[i] != '\0')
 	{
-		_putchar(k[i]);
+		_putchar(k[i] + '0');
 		i++;
 	}
 	return (0);
