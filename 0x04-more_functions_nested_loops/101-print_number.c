@@ -14,7 +14,7 @@ void print_number(int n)
 	if (num < 0)
 	{
 		num *= -1;
-		putchar('-');
+		_putchar('-');
 	}
 	m = 1;
 	c = 1;
@@ -46,12 +46,12 @@ void print_number(int n)
 	                }
 	                while  (m > 0)
 	                {
-	                    putchar((k / m % 10) + '0');
+	                    _putchar((k / m % 10) + '0');
 	                    m /= 10;
 	                }
 	                while (l > 0)
 	                {
-	                    putchar((j / l % 10) + '0');
+	                    _putchar((j / l % 10) + '0');
 	                    l /= 10;
 	                }
 	                num = -1;
@@ -59,12 +59,12 @@ void print_number(int n)
 	            else{
 		if (m == 1)
 		{
-			putchar(num % 10 + '0');
+			_putchar(num % 10 + '0');
 			num = -1;
 		}
 		else
 		{
-			putchar((num / m % 10) + '0');
+			_putchar((num / m % 10) + '0');
 			m /= 10;
 		}
 	            }
