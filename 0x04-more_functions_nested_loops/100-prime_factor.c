@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	long n, maxPrime
+	long n = 612852475143, maxPrime
 	for (int i = 5; i <= sqrt(n); i += 6) 
 	{
 		while (n % i == 0) 
