@@ -9,7 +9,7 @@ void print_number(int n)
 	int m, num, j, k, l;
 	int c;
 
-	num = 1545678987;
+	num = n;
 
 	if (num < 0)
 	{
