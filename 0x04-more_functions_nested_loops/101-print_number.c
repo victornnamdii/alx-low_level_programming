@@ -7,12 +7,13 @@ void print_number(int n)
 {
 	int m, num;
 	int c;
+
 	num = n;
 
 	if (num < 0)
 	{
-		_putchar(45);
-		num = -1 * num;
+		num *= -1;
+		_putchar('-');
 	}
 	m = 1;
 	c = 1;
@@ -20,11 +21,11 @@ void print_number(int n)
 	while (c)
 	{
 		if (num / (m * 10) > 0)
-			m = m * 10;
+			m *= 10;
 		else
 			c = 0;
 	}
-	while (num >=0)
+	while (num >= 0)
 	{
 		if (m == 1)
 		{
@@ -33,8 +34,8 @@ void print_number(int n)
 		}
 		else
 		{
-			_putchar(num / m % 10 + '0');
-			m = m / 10;
+			_putchar((num / m % 10) + '0');
+			m /= 10;
 		}
 	}
 }
