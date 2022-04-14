@@ -9,17 +9,22 @@
  */
 int main(void)
 {
-	int c;
-	long num = 612852475143;
-
-	for (c = (int) sqrt(num); c > 2; c++)
+	long n, maxPrime
+	for (int i = 5; i <= sqrt(n); i += 6) 
 	{
-		if (num % c == 0)
+		while (n % i == 0) 
 		{
-			printf("%d\n", c);
-			break;
+			maxPrime = i;
+			n = n / i;
+		}
+		while (n % (i + 2) == 0) 
+		{
+			maxPrime = i + 2;
+			n = n / (i + 2);
 		}
 	}
-
+    if (n > 4)
+        maxPrime = n;
+	printf("%d\n", maxPrime);
 	return (0);
 }
