@@ -5,7 +5,7 @@
  */
 void print_number(int n)
 {
-	if (num < 0)
+	if (n < 0)
 	{
 		n *= -1;
 		_putchar('-');
