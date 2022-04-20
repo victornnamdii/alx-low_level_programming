@@ -6,18 +6,21 @@
  */
 int _atoi(char *s)
 {
-	int i, j = 0;
+	int i, sign = 1;
+	unsigned int n = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if ((s[i] >= 48 && s[i] <= 57) && s[i - 1] == '-')
+		if (s[i] = 45)
 		{
-			_putchar(45);
+			sign *= -1;
 		}
-		if (s[i] >= 48 && s[i] <= 57)
+		else if (s[i] >= 48 && s[i] <= 57)
 		{
-			_putchar(s[i]);
+			n = (n * 10) + (s[i] + '0');
 		}
+		else if (n > 0)
+			break;
 	}
-	return (j);
+	return (sign * n);
 }
