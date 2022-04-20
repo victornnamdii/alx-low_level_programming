@@ -19,6 +19,6 @@ int _atoi(char *s)
 			_putchar(s[i]);
 		}
 	}
-	if (*s = '\0')
+	if (*s == '\0')
 		return (0);
 }
