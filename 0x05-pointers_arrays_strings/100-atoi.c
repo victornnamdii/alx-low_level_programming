@@ -10,18 +10,18 @@ int _atoi(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if ((s[i] >= 48 && s[i] <= 57))
+		if ((s[i] >= 48 && s[i] <= 57) && s[i - 1] == '-')
 		{
-			for (i = 0; s[i] != '\0'; i++)
-			{
-				if ((s[i] <= 57 && s[i] >= 48) || s[i] == 45)
-				{
-					_putchar(s[i]);
-				}
-			}
+			_putchar(45);
+		}
+		if (s[i] >= 48 && s[i] <= 57)
+		{
+			_putchar(s[i]);
 		}
 		else
+		{
 			return (0);
+		}
 	}
 	return (i);
 }
