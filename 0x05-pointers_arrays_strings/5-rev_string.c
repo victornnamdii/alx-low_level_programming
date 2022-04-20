@@ -20,7 +20,7 @@ void rev_string(char *s)
 	{
 		if (i > j / 2)
 		{
-			s[i] = h[j - i];
+			s[i] = k[j - i];
 		}
 		else
 		s[i] = s[j - i];
