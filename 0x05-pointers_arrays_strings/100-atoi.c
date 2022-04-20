@@ -6,7 +6,7 @@
  */
 int _atoi(char *s)
 {
-	int i;
+	int i, j = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -19,8 +19,5 @@ int _atoi(char *s)
 			_putchar(s[i]);
 		}
 	}
-	if (*s == '\0')
-		return (0);
-	else
-		return (s[0]);
+	return (j);
 }
