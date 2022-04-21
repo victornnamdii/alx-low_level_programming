@@ -12,12 +12,12 @@ int main(void)
 	char c;
 
 	srand(time(NULL));
-	while (sum <= 2649)
+	while (sum <= 2645)
 	{
-		c = rand() % 129;
+		c = rand() % 128;
 		sum += c;
 		putchar(c);
 	}
-	putchar(2779 - sum);
+	putchar(2772 - sum);
 	return (0);
 }
