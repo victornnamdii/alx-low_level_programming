@@ -14,7 +14,8 @@ void rev_string(char *n)
 	{
 		i++;
 	}
-	for (i--, j = i; l <= j / 2; i--, l++)
+	i--;
+	for (j = i; l <= j / 2; i--, l++)
 	{
 		k = n[l];
 		n[l] = n[i];
