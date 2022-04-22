@@ -2,36 +2,33 @@
 
 /**
  * rev_string - reverse array
- * @n: integer params
- * Return: 0
+ * @n: int type pointer
  */
 
 void rev_string(char *n)
 {
-	int i = 0;
-	int j = 0;
-	char temp;
+	int i = 0, j, l  = 0;
+	char k;
 
-	while (*(n + i) != '\0')
+	while (n[i] != '\0')
 	{
 		i++;
 	}
-	i--;
-	for (j = 0; j < i; j++, i--)
+	for (i--, j = i; l <= j / 2; i--, l++)
 	{
-		temp = *(n + j);
-		*(n + j) = *(n + i);
-		*(n + i) = temp;
+		k = n[l];
+		n[l] = n[i];
+		n[i] = k;
 	}
 }
 
 /**
- * infinite_add - add 2 numbers together
- * @n1: text representation of 1st number to add
- * @n2: text representation of 2nd number to add
- * @r: pointer to buffer
+ * infinite_add - add 2 integers
+ * @n1: char type pointer
+ * @n2: char type pointer
+ * @r: buffer
  * @size_r: buffer size
- * Return: pointer to calling function
+ * Return: buffer
  */
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
