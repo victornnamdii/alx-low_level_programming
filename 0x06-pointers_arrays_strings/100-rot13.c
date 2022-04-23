@@ -16,7 +16,10 @@ char *rot13(char *str)
 		for (j = 0; l[j] != '\0'; j++)
 		{
 			if (str[i] == l[j])
+			{
 				str[i] = r[j];
+				break;
+			}
 		}
 	}
 	return (str);
