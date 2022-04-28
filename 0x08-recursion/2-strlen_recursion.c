@@ -12,7 +12,7 @@ int _strlen_recursion(char *s)
 	{
 		i++;
 		_strlen_recursion(s + 1);
+		i = 1 + i;
 	}
-	i = 1 + i;
 	return (i);
 }
