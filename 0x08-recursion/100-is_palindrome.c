@@ -26,7 +26,7 @@ int _palchk(char *i, int j)
 	if (j <= 0)
 		return (1);
 	if (*i == *(i + j - 1))
-		return (_palchk(i + 1), (j - 2));
+		return (_palchk(i + 1, j - 2));
 	else
 		return (0);
 }
