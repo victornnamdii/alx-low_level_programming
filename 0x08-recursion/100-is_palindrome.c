@@ -7,7 +7,7 @@
 int _strlen(char *a)
 {
 	int i = 0;
-	
+
 	if (*a != '\0')
 	{
 		i = 1 + _strlen(a + 1);
