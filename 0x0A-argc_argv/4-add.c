@@ -9,7 +9,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int i, sum = 0, num;
+	char *p;
 
 	if (argc == 1)
 		printf("%i\n", sum);
@@ -17,7 +18,9 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (isdigit(argv[i]) == 0)
+			num = strtol(argv[i], &p, 10);
+
+			if (*p != 0)
 			{
 				printf("Error\n");
 				return (1);
