@@ -7,31 +7,27 @@
  */
 int ccoin(int n)
 {
-	int m, j;
+	int m;
 
 	if (n >= 25)
 	{
 		m = n / 25;
-		j = n - (m * 25);
-		return (m + ccoin(j));
+		return (m + ccoin(n % 25));
 	}
 	else if (n >= 10)
 	{
 		m = n / 10;
-		j = n - (m * 10);
-		return (m + ccoin(j));
+		return (m + ccoin(n % 10));
 	}
 	else if (n >= 5)
 	{
 		m = n / 5;
-		j = n - (m * 5);
-		return (m + ccoin(j));
+		return (m + ccoin(n % 5));
 	}
 	else if (n >= 2)
 	{
 		m = n / 2;
-		j = n - (m * 2);
-		return (m + ccoin(j));
+		return (m + ccoin(n % 2));
 	}
 	else if (n == 1)
 		return (1);
