@@ -18,13 +18,15 @@ int main(int argc, char *argv[])
 		{
 			num = strtol(argv[i], &p, 10);
 
-			if (*p != 0)
+			if (!*p)
+			{
+				sum += num;
+			}
+			else
 			{
 				printf("Error\n");
 				return (1);
 			}
-			else
-				sum += num;
 		}
 	}
 	printf("%i", sum);
