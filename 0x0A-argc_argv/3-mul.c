@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - multiplies two numbers
  * @argc: argument counter
@@ -14,10 +15,6 @@ int main(int argc,  char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	for (i = 1; i < 3; i++)
-	{
-		mul *= (argv[i] - '0');
-	}
-	printf("%i\n", mul);
+	printf("%i\n", (atoi(argv[1]) * atoi(argv[2])));
 	return (0);
 }
