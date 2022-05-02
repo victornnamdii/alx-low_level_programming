@@ -7,11 +7,17 @@
  */
 int main(int argc,  char *argv[])
 {
+	int i, res = 1;
+
 	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	printf("%i\n", (atoi(argv[1]) * atoi(argv[2])));
+	for (i = 1; i < 3; i++)
+	{
+		res *= atoi(argv[i]);
+	}
+	printf("%i\n", res);
 	return (0);
 }
