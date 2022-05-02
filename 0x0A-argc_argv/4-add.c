@@ -9,20 +9,18 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
-	long sum = 0, num;
+	int total, i;
 	char *p;
+	int num;
 
+	total = 0;
 	if (argc > 1)
 	{
-		for (i = 1; i < argc; i++)
+		for (i = 1; argv[i]; i++)
 		{
 			num = strtol(argv[i], &p, 10);
-
 			if (!*p)
-			{
-				sum += num;
-			}
+				total += num;
 			else
 			{
 				printf("Error\n");
@@ -30,6 +28,6 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
-	printf("%ld", sum);
+	printf("%d\n", total);
 	return (0);
 }
