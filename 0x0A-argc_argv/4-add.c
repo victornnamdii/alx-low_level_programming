@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
  * main - adds positive numbers
  * @argc: argument counter
@@ -16,7 +17,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (argv[i] < 48 || argv[i] > 57)
+			if (isdigit(argv[i]) == 0)
 			{
 				printf("Error\n");
 				return (1);
@@ -25,6 +26,6 @@ int main(int argc, char *argv[])
 				sum += atoi(argv[i]);
 		}
 		printf("%i\n", sum);
-		return (0);
 	}
+	return (0);
 }
