@@ -7,7 +7,7 @@
  */
 int main(int argc,  char *argv[])
 {
-	int i, res = 1;
+	int i, mul = 1;
 
 	if (argc != 3)
 	{
@@ -16,8 +16,8 @@ int main(int argc,  char *argv[])
 	}
 	for (i = 1; i < 3; i++)
 	{
-		res *= atoi(argv[i]);
+		mul *= (argv[i] - '0');
 	}
-	printf("%i\n", res);
+	printf("%i\n", mul);
 	return (0);
 }
