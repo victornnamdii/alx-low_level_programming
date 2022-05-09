@@ -27,8 +27,11 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 			free(nstr);
 			return (NULL);
 		}
-		for (i = 0; i < old_size; i++)
-			nstr[i] = hstr[i];
+		if (ptr != NULL)
+		{
+			for (i = 0; i < old_size; i++)
+				nstr[i] = hstr[i];
+		}
 
 	}
 	else if (new_size == old_size)
