@@ -9,7 +9,7 @@
  * else pointer should point to a newly allocated space
  * in memory which contains the contents of s1.
  */
-char *string_concat(char *s1, char *s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *nstr;
 	unsigned int i, j, size1, size2;
