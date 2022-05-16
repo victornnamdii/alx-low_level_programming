@@ -52,7 +52,7 @@ void print_all(const char * const format, ...)
 				printf("%s", str);
 				break;
 		}
-		if (i < (length - 1))
+		if (i < (length - 1) && format && format[i])
 		{
 			switch (format[i])
 			{
