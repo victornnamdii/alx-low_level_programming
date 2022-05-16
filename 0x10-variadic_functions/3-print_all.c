@@ -28,38 +28,37 @@ int _strlen(const char * const s)
 void print_all(const char * const format, ...)
 {
 	int i = 0, length = _strlen(format), j = 0;
-	char *str;
+	char *str, ch;
 	va_list print;
 
 	va_start(print, format);
 	while (i < length)
 	{
-		if (i > 0)
-		{
-			switch (format[i])
-			{
-				case 'c': case 'i': case 'f': case 's':
-					printf(", ");
-			}
-		}
+		ch = format[i + 1];
 		switch (format[i])
 		{
 			case 'c':
-				printf("%c", va_arg(print, int)), j = 1;
+				printf("%c", va_arg(print, int));
+				j = 1;
 				break;
 			case 'i':
-				printf("%i", va_arg(print, int)), j = 1;
+				printf("%i", va_arg(print, int));
+				j = 1;
 				break;
 			case 'f':
-				printf("%f", va_arg(print, double)), j = 1;
+				printf("%f", va_arg(print, double));
+				j = 1;
 				break;
 			case 's':
 				str = va_arg(print, char *);
+				j = 1;
 				if (str == NULL)
 					str = "(nil)";
 				printf("%s", str), j = 1;
 				break;
 		}
+		if (j > 0 && (ch == 'c' || ch == 'i' || ch == 'f' || ch == 's'))
+			printf(", ");
 		i++;
 	}
 	printf("\n");
