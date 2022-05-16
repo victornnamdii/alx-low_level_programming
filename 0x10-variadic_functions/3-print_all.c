@@ -32,7 +32,7 @@ void print_all(const char * const format, ...)
 	va_list print;
 
 	va_start(print, format);
-	while (i < length && format != NULL && format[i] != NULL)
+	while (i < length && format != NULL && format[i])
 	{
 		switch (format[i])
 		{
