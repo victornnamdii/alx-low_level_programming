@@ -7,6 +7,8 @@
  *     */
 int main(void)
 {
-	    print_all("ceis", 'B', 3, "stSchool");
+	float j = 5.7;
+	    print_all("ceis", 'B', j, "stSchool");
+
 	        return (0);
 }
