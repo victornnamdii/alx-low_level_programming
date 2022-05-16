@@ -27,12 +27,12 @@ int _strlen(const char * const s)
  */
 void print_all(const char * const format, ...)
 {
-	int i = 0, length = _strlen(format), j = 0;
+	int i = 0, j = 0;
 	char *str, ch;
 	va_list print;
 
 	va_start(print, format);
-	while (i < length)
+	while (format && format[i])
 	{
 		ch = format[i + 1];
 		switch (format[i])
