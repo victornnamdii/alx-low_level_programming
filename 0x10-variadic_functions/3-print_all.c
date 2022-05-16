@@ -27,7 +27,7 @@ int _strlen(const char * const s)
  */
 void print_all(const char * const format, ...)
 {
-	int i = 0, length = _strlen(format);
+	int i = 0, length = _strlen(format), j = 0;
 	char *str;
 	va_list print;
 
@@ -45,19 +45,19 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case 'c':
-				printf("%c", va_arg(print, int));
+				printf("%c", va_arg(print, int)), j = 1;
 				break;
 			case 'i':
-				printf("%i", va_arg(print, int));
+				printf("%i", va_arg(print, int)), j = 1;
 				break;
 			case 'f':
-				printf("%f", va_arg(print, double));
+				printf("%f", va_arg(print, double)), j = 1;
 				break;
 			case 's':
 				str = va_arg(print, char *);
 				if (str == NULL)
 					str = "(nil)";
-				printf("%s", str);
+				printf("%s", str), j = 1;
 				break;
 		}
 		i++;
