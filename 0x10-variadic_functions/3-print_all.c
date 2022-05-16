@@ -34,6 +34,14 @@ void print_all(const char * const format, ...)
 	va_start(print, format);
 	while (i < length)
 	{
+		if (i > 0)
+		{
+			switch (format[i])
+			{
+				case 'c': case 'i': case 'f': case 's':
+					printf(", ");
+			}
+		}
 		switch (format[i])
 		{
 			case 'c':
@@ -52,14 +60,7 @@ void print_all(const char * const format, ...)
 				printf("%s", str);
 				break;
 		}
-		if (i < (length - 1) && format && format[i])
-		{
-			switch (format[i])
-			{
-				case 'c': case 'i': case 'f': case 's':
-					printf(", ");
-			}
-		} i++;
+		i++;
 	}
 	printf("\n");
 	va_end(print);
