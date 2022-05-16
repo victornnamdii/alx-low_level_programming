@@ -2,21 +2,6 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- * _strlen - returns the length of a string
- * @s: char type string
- * Return: string length
- */
-int _strlen(const char * const s)
-{
-	int i = 0;
-
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
-/**
  * print_all - prints anything
  * @format: types of arguments passed to the function
  * c: char
